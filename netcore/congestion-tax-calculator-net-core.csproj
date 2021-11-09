@@ -1,9 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>congestion.calculator</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>CongestionTaxCalculator</RootNamespace>
+    <AssemblyName>CongestionTaxCalculator</AssemblyName>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>true</WarningsAsErrors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="morelinq" Version="3.3.2" />
+  </ItemGroup>
 
 </Project>

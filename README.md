@@ -2,6 +2,9 @@
 
 Welcome the Volvo Cars Congestion Tax Calculator assignment.
 
-This repository contains a developer [assignment](ASSIGNMENT.md) used as a basis for candidate intervew and evaluation.
+This repository contains a completed developer [assignment](ASSIGNMENT.md)
 
-Clone this repository to get started. Due to a number of reasons, not least privacy, you will be asked to zip your solution and mail it in, instead of submitting a pull-request.
+## Running the project
+1. Download the archive from the releases page and unzip it
+1. Run the .exe 
+1. Run grpc-ui/run-ui.cmd

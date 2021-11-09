@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "CongestionTaxCalculator.Grpc";
+
+package tax;
+
+import "google/protobuf/timestamp.proto";
+
+// The TaxCalculator service definition.
+service TaxCalculator {
+  // Sends a greeting
+  rpc Calculate (CalculateRequest) returns (CalculateReply);
+}
+
+// The request message 
+message CalculateRequest {
+  string vehicle_type = 1;
+  repeated google.protobuf.Timestamp timestamp = 2;
+}
+
+// The response message 
+message CalculateReply {
+  repeated DateFeePair amount_per_day = 1;
+}
+
+message DateFeePair {
+	google.protobuf.Timestamp date = 1;
+	int32 amount = 2;
+}
